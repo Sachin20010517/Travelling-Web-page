@@ -9,13 +9,14 @@ body{
 header{
     width: 80%;
     height: 95vh;
-    border: 1px solid #000;
+    /*border: 1px solid #000;*/
     margin: auto;
 }
 header nav{
     width: 95%;
     height: 7%;
-    border: 1px solid #000;
+    /*border: 1px solid #000;*/
+    padding-top: 20px;
     margin: auto;
     display: flex;
     align-items: center;
@@ -29,6 +30,7 @@ header nav ul{
 }
 header nav ul li{
     padding: 3px 15px;
+    
 }
 header nav ul li:nth-last-child(1){
     background: #000;
@@ -41,7 +43,7 @@ header nav ul li:nth-last-child(1) a{
 header nav ul li a{
     text-decoration: none;
     color: #121213;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 500;
     transition: 0.3s linear;
 }
@@ -56,7 +58,7 @@ header ._content{
     position: relative;
     width: 100%;
     height: 93%;
-    border: 1px solid #000;
+    /*border: 1px solid #000;*/
 }
 header ._content::before{
     content: '';
@@ -158,4 +160,92 @@ header ._tripBox ._searchBox input[type="button"]{
 }
 header ._tripBox ._searchBox input[type="button"]:hover{
     background-color: gray;
+}
+header ._tripBox ._travelBox{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    top: 30px;
+    /*background: #000;*/
+    /*border: 1px solid #000;*/
+    border-radius: 10px;
+    padding-bottom: 20px;
+    box-shadow: 0px 20px 25px -10px rgb(165, 165, 165);
+}
+header ._tripBox ._travelBox::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: rgb(241, 241, 241, .7);
+    backdrop-filter: blur(5px);
+    z-index: -1;
+}
+header ._tripBox ._travelBox h4{
+    margin: 0;
+    padding: 40px 0px 15px 1.7%;
+}
+header ._tripBox ._travelBox ._cards{
+    width: 96%;
+    height: auto;
+    margin: 0 auto;
+    /*border: 1px solid #000;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+header ._tripBox ._travelBox ._cards .cardColumn{
+    width: 220px;
+    height: 180px;
+    /*border: 1px solid #000;*/
+}
+header ._tripBox ._travelBox ._cards .cardColumn h3{
+    margin: 0px 0px 10px 0px;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+header ._tripBox ._travelBox ._cards .cardColumn h3 img{
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+
+}
+header ._tripBox ._travelBox ._cards .cardColumn img{
+    width: 100%;
+    height: 50%;
+
+}
+header ._tripBox ._travelBox ._cards .cardColumn ._btn_City{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*border: 1px solid #000*/
+}
+header ._tripBox ._travelBox ._cards .cardColumn ._btn_City a{
+    text-decoration: none;
+    background: #000;
+    color: #fff;
+    border-radius: 20px;
+    padding: 6px 20px;
+    font-size: 11px;
+    transition: .3s linear;
+
+}
+header ._tripBox ._travelBox ._cards .cardColumn ._btn_City a:hover{
+    background: gray;
+}
+header ._tripBox ._travelBox ._cards .cardColumn ._btn_City h5{
+    font-size: 11px;
+    font-weight: 500;
+    margin: 0;
+    margin-top: 5px;
+    line-height: 15px;
+}
+header ._tripBox ._travelBox ._cards .cardColumn ._btn_City h5 span{
+    font-size: 13px;
+    font-weight: 700;
 }
