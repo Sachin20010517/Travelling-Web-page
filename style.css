@@ -66,7 +66,7 @@ header ._content::before{
     width: 100%;
     height: 80%;
     border: 1px solid #000;
-    background: url('img/background1.png')no-repeat center center/cover;
+    background: url('img/background_2.jpg')no-repeat center center/cover;
     border-radius: 10px;
     z-index: -1;
 }
@@ -248,4 +248,151 @@ header ._tripBox ._travelBox ._cards .cardColumn ._btn_City h5{
 header ._tripBox ._travelBox ._cards .cardColumn ._btn_City h5 span{
     font-size: 13px;
     font-weight: 700;
+}
+
+/*This css for _offers section */
+
+._offers{
+    width: 60%;
+    height: auto;
+    /*border: 1px solid #000;*/
+    margin: auto;
+    margin-top: 100px;
+}
+._offers h1{
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+
+}
+._offers p{
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+
+}
+._offers ._cards{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*border: 1px solid #000;*/
+    flex-wrap: wrap;
+}
+._offers ._cards ._cardsColumn{
+    position: relative;
+    width: 200px;
+    height: 350px;
+    /*border: 1px solid #000;*/
+    margin: 10px;
+}
+._offers ._cards ._cardsColumn h3{
+    width: 140px;
+    padding: 6px 0px;
+    background-color: rgb(165, 243, 165);
+    border-radius: 20px;
+    font-size: 12px;
+    display: grid;
+    place-items: center;
+    margin: auto;
+}
+._offers ._cards ._cardsColumn ._imgText{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    margin-top: 5px;
+}
+._offers ._cards ._cardsColumn ._imgText img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+._offers ._cards ._cardsColumn ._imgText h4{
+    position: absolute;
+    font-size: 9px;
+    padding: 10px 15px;
+    bottom: 0;
+    margin: 0;
+    color: #fff;
+    z-index: 2;
+}
+._offers ._cards ._cardsColumn ._imgText h4::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255, .1);
+    backdrop-filter: blur(5px);
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+}
+._offers ._cards ._cardsColumn ._contBox{
+    width: 99%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgb(214, 214, 214);
+    padding: 5px 0px;
+    border-radius: 0px 0px 5px 5px;
+}
+._offers ._cards ._cardsColumn ._contBox ._price , ._Days{
+    margin: 0px 8px;
+
+}
+._offers ._cards ._cardsColumn ._contBox ._price ._heart_chat{
+    display: flex;
+    align-items: center;
+}
+._offers ._cards ._cardsColumn ._contBox ._price ._heart_chat i:nth-child(1){
+    color: red;
+    font-size: 13px;
+    margin-right: 10px;
+}
+._offers ._cards ._cardsColumn ._contBox ._price ._heart_chat i span{
+    color: #000;
+    font-size: 12px;
+    margin-left: 3px;
+    font-style: normal;
+}
+._offers ._cards ._cardsColumn ._contBox ._price ._heart_chat i:nth-child(2){
+    color: rgb(112, 196,229);
+    font-size: 13px;
+    margin-right: 10px;
+}
+._offers ._cards ._cardsColumn ._contBox ._price ._priceDetails{
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+}
+._offers ._cards ._cardsColumn ._contBox ._price ._priceDetails a{
+    text-decoration: none;
+    color: #000;
+    font-size: 11px;
+    font-weight: 700;
+    transition: .3s linear;
+    margin-right: 13px;
+
+}
+._offers ._cards ._cardsColumn ._contBox ._price ._priceDetails a:hover{
+    color: gray;
+}
+._offers ._cards ._cardsColumn ._contBox ._price ._priceDetails h4{
+    margin: 0;
+    font-size: 13px;
+
+}
+._offers ._cards ._cardsColumn ._contBox ._Days{
+    color: #fff;
+    background: #000;
+    font-size: 8px;
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+._offers ._cards ._cardsColumn ._contBox ._Days:hover{
+    transform: rotate(360deg);
 }
