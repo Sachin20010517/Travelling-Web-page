@@ -8,3 +8,18 @@ Array.from(document.getElementsByTagName('input')).forEach((e,i)=>{
         }
     })
 })
+
+
+/*This js part for Gallery */
+
+var fullImg_Box = document.getElementById("fullImg_Box");
+var fullImg = document.getElementById("fullImg");
+
+function openFullImg(pic){
+    fullImg_Box.style.display = "flex"
+    fullImg.src = pic;
+}
+
+function closeFullImg(){
+    fullImg_Box.style.display = "none";
+}
