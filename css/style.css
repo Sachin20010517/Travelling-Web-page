@@ -4,16 +4,7 @@
     box-sizing: border-box;
 }*/
 
-/* This css for Scrollbar*/
-::-webkit-scrollbar{
-    width: 12px;
-}
-::-webkit-scrollbar-thumb{
-    background: #ff5a26;
-    border-radius: 6px;
-}
 
-/*-------end---------*/
 
 body{
     font-family: 'Poppins', sans-serif;
